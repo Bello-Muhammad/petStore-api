@@ -10,7 +10,7 @@ PetRouter.get('/:id', getPet);
 PetRouter.patch('/:id', updatePet);
 PetRouter.delete('/delete/:id', deletePet);
 
-PetRouter.post('/buy/pet', petPayment);
+PetRouter.post('/buy/:id', petPayment);
 PetRouter.post('/verify/payment', verifyPetPayment);
 
 module.exports = PetRouter;

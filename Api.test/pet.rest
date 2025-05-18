@@ -1,7 +1,7 @@
 ###add pet to store
 POST http://localhost:3000/api/v1/pets/add-pet
 Content-Type: application/json
-Authorization: : Bearer 
+Authorization: : Bearer your-token
 
 {
     "petName": "Onion",
@@ -33,7 +33,7 @@ DELETE http://localhost:3000/api/v1/pets/delete/fDEzmr4rPQvQm7vzOQQ6
 
 
 ###Pet Payment
-POST http://localhost:3000/api/v1/pets/buy/pet
+POST http://localhost:3000/api/v1/pets/buy/ZEoPiR93qrQ2smoW5zT1
 Content-Type: application/json
 Authorization: : Bearer 
 

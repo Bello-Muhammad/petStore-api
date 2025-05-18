@@ -4,7 +4,7 @@ const { addPet, getPets, getPet, updatePet, deletePet, petPayment, verifyPetPaym
 class PetController {
     static async addPet (req, res) {
         try{
-            const data = await addPet(req.body, req.user);
+            const data = await addPet(req.params.id, req.body, req.user);
 
             Success (res, 201, data.message, data.data );
         } catch (error) {

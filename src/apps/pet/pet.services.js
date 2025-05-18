@@ -5,7 +5,7 @@ class PetService {
     static async addPet (body, user) {
         const { petName, category, price } = body;
 
-        await Pet.add({ petName, category, price, owner: user.id });
+        await Pet.add({ petName, category, price, owner: user.id, status: 'available' });
 
         return { mesage: 'pet added successfully', data: { petName, category, price }}
     }
