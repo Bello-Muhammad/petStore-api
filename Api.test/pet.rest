@@ -1,0 +1,52 @@
+###add pet to store
+POST http://localhost:3000/api/v1/pets/add-pet
+Content-Type: application/json
+Authorization: : Bearer 
+
+{
+    "petName": "Onion",
+    "category": "cat",
+    "price": "40000",
+    "currency": "NGN",
+    "owner": "xgz5WreDtvSb859PyE3H"
+}
+
+###Get all pets
+GET http://localhost:3000/api/v1/pets
+Content-Type: application/json
+Authorization: : Bearer 
+
+###Get a pet
+GET http://localhost:3000/api/v1/pets/ZEoPiR93qrQ2smoW5zT1
+
+###Update pet details
+PATCH http://localhost:3000/api/v1/pets/ZEoPiR93qrQ2smoW5zT1
+Content-Type: application/json
+Authorization: : Bearer 
+
+{
+    "price": "30000"
+}
+
+###Delete pet
+DELETE http://localhost:3000/api/v1/pets/delete/fDEzmr4rPQvQm7vzOQQ6
+
+
+###Pet Payment
+POST http://localhost:3000/api/v1/pets/buy/pet
+Content-Type: application/json
+Authorization: : Bearer 
+
+{
+    "amount": "30000",
+    "email": "bellomoh250@gmail.com"
+}
+
+###verify pet payment
+POST http://localhost:3000/api/v1/pets/verify/payment
+Content-Type: application/json
+Authorization: : Bearer 
+
+{
+    "transactionRef": "o8smzaqlnl"
+}

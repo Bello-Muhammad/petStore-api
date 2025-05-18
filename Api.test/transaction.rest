@@ -1,0 +1,9 @@
+###Get all user transaction history
+GET http://localhost:3000/api/v1/transactions/
+Content-Type: application/json
+Authorization: : Bearer 
+
+###Get a transaction history
+GET http://localhost:3000/api/v1/transactions/{:id}
+Content-Type: application/json
+Authorization: : Bearer 

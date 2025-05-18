@@ -1,0 +1,44 @@
+###creating user account
+POST http://localhost:3000/api/v1/users/register-account
+Content-Type: application/json
+
+{
+    "firstName": "Bello",
+    "lastName": "Bello",
+    "email": "bello@example.com",
+    "password": "Oxo34028984",
+    "role": "user"
+}
+
+###Authenticate user
+POST http://localhost:3000/api/v1/users/auth/login
+Content-Type: application/json
+
+{
+    "email": "bello@example.com",
+    "password": "Oxo34028984"
+}
+
+###Get all accounts
+GET http://localhost:3000/api/v1/users/profiles
+Content-Type: application/json
+Authorization: : Bearer 
+
+###Get user account
+GET http://localhost:3000/api/v1/users/profile/va5myeNaxF5koUf2mp39
+Content-Type: application/json
+Authorization: : Bearer 
+
+###Update User Profile
+PATCH http://localhost:3000/api/v1/users/account/update/va5myeNaxF5koUf2mp39
+Content-Type: application/json
+Authorization: : Bearer 
+
+{
+    "lastName": "muhammad"
+}
+
+###Delete User account
+DELETE http://localhost:3000/api/v1/users/account/delete/va5myeNaxF5koUf2mp39
+Content-Type: application/json
+Authorization: : Bearer 
